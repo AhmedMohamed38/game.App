@@ -1,0 +1,111 @@
+body{
+    background-color: #272B30;
+    font-family: "Nerko One", cursive;
+    
+}
+.navv{
+    margin-top: -30px;
+}
+header img {
+    max-height: 30vh;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.active{
+    color: #022c6b !important;
+}
+/* .nav-link:focus{
+    color: #022c6b !important;
+} */
+.bg-min{
+    background-color: #3A497B;
+}
+.card-me p{
+    color: gray;
+}
+.card-me button{
+    width: 2.2rem;
+    height: 2rem;
+    font-size: 12px;
+    text-align: center;
+    padding: 0;
+}
+.card-me{
+    transition: all .7s;
+    height: 227px;
+}
+.bg-card{
+    background-color: gray;
+    border-radius: 3px;
+}
+.card-me:hover {
+    transform: scale(1.07);
+}
+.card-me:hover img{
+    filter: grayscale(0);
+}
+.card-me img{
+    filter: grayscale(.7);
+    transition: all .7s;
+}
+.dis{
+    font-size: .8rem;
+}
+
+/* ded             */
+.de-text{
+background-color: #0DCAF0;
+color: #000;
+border-radius: 10px;
+font-size: 1rem;
+padding: 0 3px;
+}
+.icon-up img
+{
+    width: 1.5rem;
+}
+.icon-up{
+    position: fixed;
+    bottom: 7%;
+    right: 2%;
+}
+.x-move{
+    top:10%;
+    right: 7%;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* lodar */
+/* HTML: <div class="loader"></div> */
+.new{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 333;
+}
+.loader {
+    width: 100px;
+    aspect-ratio: 1;
+    display: grid;
+    border: 4px solid #0000;
+    border-radius: 50%;
+    border-right-color: #022c6b;
+    animation: l15 1s infinite linear;
+  }
+  .loader::before,
+  .loader::after {    
+    content: "";
+    grid-area: 1/1;
+    margin: 2px;
+    border: inherit;
+    border-radius: 50%;
+    animation: l15 2s infinite;
+  }
+  .loader::after {
+    margin: 8px;
+    animation-duration: 3s;
+  }
+  @keyframes l15{ 
+    100%{transform: rotate(1turn)}
+  }
